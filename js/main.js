@@ -93,7 +93,7 @@ $(document).ready(function(){
     });
 });
 AOS.init({
-    offset: 0,
+    offset: 100,
 });
 
 jQuery(document).ready(function($) {
