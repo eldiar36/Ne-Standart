@@ -71,77 +71,24 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.burger-menu.burger-menu_active .burger-menu_button {
-  right: -15px;
-  top: -5px;
-}
-
-.burger-menu.burger-menu_active .burger-menu-lines {
-  background-color: #000000 !important;
-}
-
-.burger-menu.burger-menu_active .burger-menu-lines:before {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 10px !important;
-}
-
-.burger-menu.burger-menu_active .burger-menu-lines:after {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: 0;
+.burger-menu.burger-menu_active .burger-menu_button.first {
+  z-index: 1;
 }
 
 .burger-menu .burger-menu_button {
   position: relative;
   z-index: 1001;
   border: none;
-  background: none;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-  top: 25px;
-  right: -12px;
-}
-
-.burger-menu .burger-menu_button .burger-menu-lines {
-  position: absolute;
   width: 30px;
-  height: 3px;
-  background-color: #ffffff;
-  border-radius: 1px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.burger-menu .burger-menu_button .burger-menu-lines:after {
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  background-color: #ffffff;
-  border-radius: 1px;
-  content: "";
-  top: 10px;
+  height: 23px;
+  top: 14px;
   right: 0;
+  background: url("../images/menu burger (1).png") no-repeat center;
+  background-size: contain;
+  cursor: pointer;
 }
 
-.burger-menu .burger-menu_button .burger-menu-lines:before {
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  background-color: #ffffff;
-  border-radius: 1px;
-  content: "";
-  top: -10px;
-  right: 0;
-}
-
-.burger-menu_nav {
+.burger-menu .burger-menu_nav {
   position: fixed;
   z-index: 990;
   display: -webkit-box;
@@ -151,21 +98,33 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40%;
+  width: 23%;
   height: 100vh;
-  right: 0;
   top: -200%;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  right: 0;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
   background: #000000;
   border-radius: 0 4px 4px 0;
-  padding: 40px;
+  padding: 40px 40px 40px 40px;
 }
 
-.burger-menu_nav .burger-menu_link {
+.burger-menu .burger-menu_nav .burger-menu_button {
+  background: url("../images/Group.png") no-repeat center;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.burger-menu .burger-menu_nav .burger-menu_button.two {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.burger-menu .burger-menu_nav .burger-menu_link {
   display: inline-block;
-  width: 40%;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -173,21 +132,21 @@ main {
   margin-bottom: 10px;
 }
 
-.burger-menu_nav .burger-menu_link.second {
+.burger-menu .burger-menu_nav .burger-menu_link.second {
   font-weight: 300;
 }
 
-.burger-menu_nav .burger-menu_link.first {
+.burger-menu .burger-menu_nav .burger-menu_link.first {
   margin-bottom: 15px;
 }
 
-.burger-menu_nav .burger-menu_link:hover {
+.burger-menu .burger-menu_nav .burger-menu_link:hover {
   -webkit-transform: translateY(2px);
       -ms-transform: translateY(2px);
           transform: translateY(2px);
 }
 
-.burger-menu_nav .burger-menu_overlay {
+.burger-menu .burger-menu_nav .burger-menu_overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -197,9 +156,9 @@ main {
   z-index: 10;
 }
 
-.burger-menu_nav .btn-1,
-.burger-menu_nav footer .contacts .btn-3 a,
-footer .contacts .btn-3 .burger-menu_nav a {
+.burger-menu .burger-menu_nav .btn-1,
+.burger-menu .burger-menu_nav footer .contacts .btn-3 a,
+footer .contacts .btn-3 .burger-menu .burger-menu_nav a {
   margin-bottom: 20px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -209,15 +168,15 @@ footer .contacts .btn-3 .burger-menu_nav a {
           align-items: center;
 }
 
-.burger-menu_nav .btn-1.first,
-.burger-menu_nav footer .contacts .btn-3 a.first,
-footer .contacts .btn-3 .burger-menu_nav a.first {
+.burger-menu .burger-menu_nav .btn-1.first,
+.burger-menu .burger-menu_nav footer .contacts .btn-3 a.first,
+footer .contacts .btn-3 .burger-menu .burger-menu_nav a.first {
   margin-top: 25px;
 }
 
-.burger-menu_nav .btn-1 a,
-.burger-menu_nav footer .contacts .btn-3 a a,
-footer .contacts .btn-3 .burger-menu_nav a a {
+.burger-menu .burger-menu_nav .btn-1 a,
+.burger-menu .burger-menu_nav footer .contacts .btn-3 a a,
+footer .contacts .btn-3 .burger-menu .burger-menu_nav a a {
   padding: 5px 0 !important;
   width: 238px;
   height: 48px !important;
@@ -274,7 +233,9 @@ footer .contacts .btn-3 a {
           justify-content: center;
 }
 
-.burger-menu_nav .btn-1 a,
+.burger-menu .burger-menu_nav .btn-1 a,
+.burger-menu .burger-menu_nav footer .contacts .btn-3 a a,
+footer .contacts .btn-3 .burger-menu .burger-menu_nav a a,
 #home .content .box .btn-1 a,
 #home .content .box footer .contacts .btn-3 a a,
 footer .contacts .btn-3 #home .content .box a a,
@@ -339,7 +300,9 @@ footer .contacts .btn-3 a a,
   transition: all 0.2s ease-in-out;
 }
 
-.burger-menu_nav .btn-1 a:before,
+.burger-menu .burger-menu_nav .btn-1 a:before,
+.burger-menu .burger-menu_nav footer .contacts .btn-3 a a:before,
+footer .contacts .btn-3 .burger-menu .burger-menu_nav a a:before,
 #home .content .box .btn-1 a:before,
 #home .content .box footer .contacts .btn-3 a a:before,
 footer .contacts .btn-3 #home .content .box a a:before,
@@ -392,7 +355,7 @@ footer .contacts .btn-3 a a:before,
   transition: none;
 }
 
-.burger-menu_nav .btn-1 a:hover,
+.burger-menu .burger-menu_nav .btn-1 a:hover,
 #home .content .box .btn-1 a:hover,
 #home .content .box footer .contacts .btn-3 a a:hover,
 footer .contacts .btn-3 #home .content .box a a:hover,
@@ -433,7 +396,7 @@ footer .contacts .btn-3 a a:hover,
   color: #fff;
 }
 
-.burger-menu_nav .btn-1 a:hover:before,
+.burger-menu .burger-menu_nav .btn-1 a:hover:before,
 #home .content .box .btn-1 a:hover:before,
 #home .content .box footer .contacts .btn-3 a a:hover:before,
 footer .contacts .btn-3 #home .content .box a a:hover:before,
@@ -470,12 +433,12 @@ footer .contacts .btn-3 #questions .any-box a a:hover:before,
 footer .contacts .btn-1 a:hover:before,
 footer .contacts .btn-3 a a:hover:before,
 .white-popup-block .btn-1 a:hover:before {
-  -webkit-transform: skewX(-45deg) translateX(26.5em);
-      -ms-transform: skewX(-45deg) translateX(26.5em);
-          transform: skewX(-45deg) translateX(26.5em);
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transform: skewX(-45deg) translateX(36.5em);
+      -ms-transform: skewX(-45deg) translateX(36.5em);
+          transform: skewX(-45deg) translateX(36.5em);
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 @-webkit-keyframes sheen {
@@ -549,9 +512,9 @@ header .header-top .right-box .call-btn:hover {
 }
 
 header .header-top .right-box .call-btn:hover:before {
-  -webkit-transform: skewX(-45deg) translateX(23.5em);
-      -ms-transform: skewX(-45deg) translateX(23.5em);
-          transform: skewX(-45deg) translateX(23.5em);
+  -webkit-transform: skewX(-45deg) translateX(33.5em);
+      -ms-transform: skewX(-45deg) translateX(33.5em);
+          transform: skewX(-45deg) translateX(33.5em);
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -577,6 +540,48 @@ footer .contacts .btn-2 a {
   color: #C1915C;
   padding: 0 50px;
   height: 78px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#home-btn-mobile .btn-2 a:before,
+footer .contacts .btn-2 a:before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -5.4em;
+  -webkit-transform: skewX(-45deg) translateX(0);
+      -ms-transform: skewX(-45deg) translateX(0);
+          transform: skewX(-45deg) translateX(0);
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+#home-btn-mobile .btn-2 a:hover,
+footer .contacts .btn-2 a:hover {
+  background-color: #000000;
+  color: #C1915C;
+}
+
+#home-btn-mobile .btn-2 a:hover:before,
+footer .contacts .btn-2 a:hover:before {
+  -webkit-transform: skewX(-45deg) translateX(36.5em);
+      -ms-transform: skewX(-45deg) translateX(36.5em);
+          transform: skewX(-45deg) translateX(36.5em);
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .section-title {
@@ -685,7 +690,7 @@ header .header-top {
 }
 
 header .header-top .logo {
-  margin-right: 163px;
+  margin-right: 158px;
 }
 
 header .header-top .logo img {
@@ -955,8 +960,14 @@ header .header-fixed-box .right-box-fixed .links a {
 }
 
 header .header-fixed-box .right-box-fixed .burger-menu .burger-menu_button {
-  top: 15px;
-  right: 15px;
+  top: 7px;
+  right: 0;
+}
+
+header .header-fixed-box .right-box-fixed .burger-menu .burger-menu_button.two {
+  position: absolute;
+  right: 30px;
+  top: 20px;
 }
 
 .section-subtitle.mobile {
@@ -1158,6 +1169,7 @@ footer .contacts .btn-3 #home-btn-mobile a a {
 }
 
 #exclusive .box a {
+  text-transform: uppercase;
   display: inline-block;
   margin: 16px auto 0 auto;
   font-weight: 400;
@@ -1875,6 +1887,7 @@ footer .contacts .btn-3 #scheme a a.second {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 #questions .any-box .description {
@@ -1984,7 +1997,7 @@ footer .contacts .btn-3 a {
 }
 
 footer .contacts .btn-2 {
-  margin-top: 87px;
+  margin-top: 94px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2018,10 +2031,13 @@ footer .contacts .btn-3 a {
   color: #ffffff;
   height: 68px;
   padding: 0 30px;
+  border-radius: 4px;
 }
 
 footer .contacts .btn-3 a img {
   margin-right: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 footer .contacts .btn-social {
@@ -2104,6 +2120,7 @@ footer .footer .politic {
 }
 
 footer .footer .politic a {
+  text-transform: uppercase;
   font-size: 12px;
   line-height: 12px;
   display: -webkit-box;
@@ -2316,6 +2333,12 @@ footer .contacts .btn-3 #send form a {
   margin-top: 36px;
 }
 
+@media (max-width: 1600px) {
+  .burger-menu .burger-menu_nav {
+    width: 26%;
+  }
+}
+
 @media (max-width: 1400px) {
   #home .home-slider .items .box h1 {
     font-size: 38px;
@@ -2417,7 +2440,7 @@ footer .contacts .btn-3 #send form a {
   }
 
   header .header-top .logo {
-    margin-right: 70px;
+    margin-right: 54px;
   }
 
   header .header-top .logo img {
@@ -2429,7 +2452,7 @@ footer .contacts .btn-3 #send form a {
   }
 
   header .header-top .center-box {
-    margin-right: 45px;
+    margin-right: 35px;
   }
 
   header .header-top .center-box .contacts-box-left {
@@ -2609,21 +2632,15 @@ footer .contacts .btn-3 #send form a {
     display: none;
   }
 
-  header .header-top .burger-menu.burger-menu_active .burger-menu_button {
-    top: 0 !important;
-    right: 0 !important;
-  }
-
   header .header-top .burger-menu .burger-menu_button {
     top: 0;
-    left: 15px;
-    margin-right: 22px;
+    left: 0;
   }
 
   header .header-top .burger-menu .burger-menu_nav {
     text-align: left;
     width: 100%;
-    left: 0;
+    right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2635,6 +2652,11 @@ footer .contacts .btn-3 #send form a {
         -ms-flex-align: start;
             align-items: start;
     padding: 10% 0 0 40px;
+  }
+
+  header .header-top .burger-menu .burger-menu_nav .burger-menu_button.two {
+    left: 40px;
+    top: 20px;
   }
 
   header .header-top .burger-menu .burger-menu_nav .btn-1,
@@ -2670,7 +2692,9 @@ footer .contacts .btn-3 #send form a {
     margin-bottom: 50px;
   }
 
-  .burger-menu_nav .btn-1 a,
+  .burger-menu .burger-menu_nav .btn-1 a,
+  .burger-menu .burger-menu_nav footer .contacts .btn-3 a a,
+  footer .contacts .btn-3 .burger-menu .burger-menu_nav a a,
   #home .content .box .btn-1 a,
   #home .content .box footer .contacts .btn-3 a a,
   footer .contacts .btn-3 #home .content .box a a,
@@ -3037,6 +3061,25 @@ footer .contacts .btn-3 #send form a {
     height: 514px;
   }
 
+  #materials .btn-1,
+  #materials footer .contacts .btn-3 a,
+  footer .contacts .btn-3 #materials a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  #materials .btn-1 a:first-child,
+  #materials footer .contacts .btn-3 a a:first-child,
+  footer .contacts .btn-3 #materials a a:first-child {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
   #design-project {
     background: url("/images/Group 1395 1.png") no-repeat bottom center;
     background-size: cover;
@@ -3045,13 +3088,37 @@ footer .contacts .btn-3 #send form a {
   #about .box-img {
     height: auto;
   }
+
+  #about .statistics .static-wrap p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 7px;
+  }
+
+  #about .statistics .static-wrap p.last {
+    margin-top: 7px;
+  }
+
+  #about .statistics .static-wrap .num p {
+    font-size: 34px;
+  }
+
+  footer .contacts .btn-1 a,
+  footer .contacts .btn-3 a a {
+    width: 300px;
+    padding: 0 25px;
+  }
+
+  footer .contacts .btn-2 a {
+    width: 300px;
+    padding: 0 25px;
+  }
 }
 
 @media (max-width: 480px) {
   .btn-1,
   footer .contacts .btn-3 a {
     height: 56px !important;
-    padding: 0 17px !important;
   }
 
   .btn-1 a,
@@ -3059,6 +3126,183 @@ footer .contacts .btn-3 #send form a {
     font-size: 14px;
     line-height: 26px;
   }
+
+  .burger-menu .burger-menu_nav .btn-1 a:before,
+  .burger-menu .burger-menu_nav footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 .burger-menu .burger-menu_nav a a:before,
+  #home .content .box .btn-1 a:before,
+  #home .content .box footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #home .content .box a a:before,
+  #home-btn-mobile .btn-1 a:before,
+  #home-btn-mobile footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #home-btn-mobile a a:before,
+  #exclusive .btn-1 a:before,
+  #exclusive footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #exclusive a a:before,
+  #professional-design .btn-1 a:before,
+  #professional-design footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #professional-design a a:before,
+  #design-project .btn-1 a:before,
+  #design-project footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #design-project a a:before,
+  #portfolio .btn-1 a:before,
+  #portfolio footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #portfolio a a:before,
+  #materials .btn-1 a:before,
+  #materials footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #materials a a:before,
+  #cooperation .btn-1 a:before,
+  #cooperation footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #cooperation a a:before,
+  #cooperation-mobile .btn-1 a:before,
+  #cooperation-mobile footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #cooperation-mobile a a:before,
+  #scheme .btn-1 a:before,
+  #scheme footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #scheme a a:before,
+  #questions .any-box .btn-1 a:before,
+  #questions .any-box footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #questions .any-box a a:before,
+  footer .contacts .btn-1 a:before,
+  footer .contacts .btn-3 a a:before,
+  .white-popup-block .btn-1 a:before {
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+
+  .burger-menu .burger-menu_nav .btn-1 a:hover:before,
+  #home .content .box .btn-1 a:hover:before,
+  #home .content .box footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #home .content .box a a:hover:before,
+  #home-btn-mobile .btn-1 a:hover:before,
+  #home-btn-mobile footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #home-btn-mobile a a:hover:before,
+  #exclusive .btn-1 a:hover:before,
+  #exclusive footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #exclusive a a:hover:before,
+  #professional-design .btn-1 a:hover:before,
+  #professional-design footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #professional-design a a:hover:before,
+  #design-project .btn-1 a:hover:before,
+  #design-project footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #design-project a a:hover:before,
+  #portfolio .btn-1 a:hover:before,
+  #portfolio footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #portfolio a a:hover:before,
+  #materials .btn-1 a:hover:before,
+  #materials footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #materials a a:hover:before,
+  #cooperation .btn-1 a:hover:before,
+  #cooperation footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #cooperation a a:hover:before,
+  #cooperation-mobile .btn-1 a:hover:before,
+  #cooperation-mobile footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #cooperation-mobile a a:hover:before,
+  #scheme .btn-1 a:hover:before,
+  #scheme footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #scheme a a:hover:before,
+  #questions .any-box .btn-1 a:hover:before,
+  #questions .any-box footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #questions .any-box a a:hover:before,
+  footer .contacts .btn-1 a:hover:before,
+  footer .contacts .btn-3 a a:hover:before,
+  .white-popup-block .btn-1 a:hover:before {
+    -webkit-transform: skewX(-45deg) translateX(0);
+        -ms-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+
+@-webkit-keyframes slideme {
+    0% {
+      left: -30px;
+      margin-left: 0;
+    }
+
+    30% {
+      left: 110%;
+      margin-left: 80px;
+    }
+
+    100% {
+      left: 110%;
+      margin-left: 80px;
+    }
+}
+
+@keyframes slideme {
+    0% {
+      left: -30px;
+      margin-left: 0;
+    }
+
+    30% {
+      left: 110%;
+      margin-left: 80px;
+    }
+
+    100% {
+      left: 110%;
+      margin-left: 80px;
+    }
+}
+
+  #home-btn-mobile .btn-2 a:before,
+  footer .contacts .btn-2 a:before {
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: 0.03s;
+            animation-delay: 0.03s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+
+  #home-btn-mobile .btn-2 a:hover:before,
+  footer .contacts .btn-2 a:hover:before {
+    -webkit-transform: skewX(-45deg) translateX(0);
+        -ms-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+
+@keyframes slideme {
+    0% {
+      left: -30px;
+      margin-left: 0;
+    }
+
+    30% {
+      left: 110%;
+      margin-left: 80px;
+    }
+
+    100% {
+      left: 110%;
+      margin-left: 80px;
+    }
+}
 
   .owl-theme .owl-dots .owl-dot span {
     width: 9px !important;
@@ -3288,8 +3532,6 @@ footer .contacts .btn-3 #send form a {
   #materials footer .contacts .btn-3 a,
   footer .contacts .btn-3 #materials a {
     margin-top: 60px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -3395,6 +3637,11 @@ footer .contacts .btn-3 #send form a {
   #about .statistics .static-wrap p {
     font-size: 12px;
     line-height: 16px;
+    margin-top: 7px;
+  }
+
+  #about .statistics .static-wrap p.last {
+    margin-top: 7px;
   }
 
   #about .statistics .static-wrap .num p {
@@ -3705,7 +3952,7 @@ footer .contacts .btn-3 #send form a {
 
   footer .contacts .btn-2 a {
     height: 60px;
-    padding: 0 14px;
+    padding: 0 11px;
     font-size: 14px !important;
     line-height: 20px;
     width: 220px;
@@ -3824,5 +4071,12 @@ footer .contacts .btn-3 #send form a {
     font-size: 13px !important;
     line-height: 15px !important;
     margin-bottom: 4px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  #about .statistics .static-wrap .num p {
+    font-size: 23px;
+    line-height: 25px;
   }
 }
