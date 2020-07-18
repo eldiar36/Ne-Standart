@@ -133,14 +133,14 @@ function  libsCss() {
 }
 function images(){
     return src(path.src.img)
-        /*.pipe(
+        .pipe(
             imagemin({
                 progressive: true,
                 svgPlugins: [{removeViewBox:false}],
                 interlaced: true,
                 optimizationLevel: 3 //0 to 7
             })
-        )*/
+        )
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream())
 }
