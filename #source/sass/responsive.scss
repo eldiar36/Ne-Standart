@@ -1,3 +1,10 @@
+@media (max-width: 1600px) {
+  .burger-menu{
+    .burger-menu_nav {
+      width: 26%;
+    }
+  }
+}
 @media (max-width: 1400px) {
   #home{
     .home-slider{
@@ -100,7 +107,7 @@
   header {
     .header-top{
       .logo {
-        margin-right: 70px;
+        margin-right: 54px;
         img {
           width: 160px;
         }
@@ -109,7 +116,7 @@
         }
       }
       .center-box{
-        margin-right: 45px;
+        margin-right: 35px;
         .contacts-box-left{
           padding-right: 16px;
           p{
@@ -283,25 +290,27 @@
       }
 
       .burger-menu {
-        &.burger-menu_active .burger-menu_button {
-          top: 0 !important;
-          right: 0 !important;
-        }
-
-        .burger-menu_button {
+         .burger-menu_button {
           top: 0;
-          left: 15px;
-          margin-right: 22px;
+          left: 0;
+
         }
 
         .burger-menu_nav {
           text-align: left;
           width: 100%;
-          left: 0;
+          right: 0;
           display: flex;
           flex-direction: column;
           align-items: start;
           padding: 10% 0 0 40px;
+          .burger-menu_button{
+            &.two{
+              left: 40px;
+              top: 20px;
+            }
+
+          }
           .btn-1{
             &.first{
               margin-top: 20px;
@@ -638,8 +647,7 @@
     }
   }
 }
-
-    @media (max-width: 767px) {
+@media (max-width: 767px) {
       .container {
         padding: 0 30px;
       }
@@ -670,6 +678,18 @@
           }
         }
         }
+  #materials{
+    .btn-1{
+      flex-direction: column;
+      justify-content: center;
+      a {
+        &:first-child{
+          margin-bottom: 20px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
       #design-project {
         background: url("/images/Group 1395 1.png") no-repeat bottom center;
         background-size: cover;
@@ -678,19 +698,113 @@
         .box-img {
           height: auto;
         }
+        .statistics{
+          .static-wrap{
+            p {
+              font-size: 12px;
+              line-height: 16px;
+              margin-top: 7px;
+              &.last {
+                margin-top: 7px;
+              }
+            }
+            .num{
+              p{
+                font-size: 34px;
+              }
+            }
+          }
+        }
       }
+  footer {
+    .contacts{
+      .btn-1 {
+        a {
+          width: 300px;
+          padding: 0 25px;
+        }
+      }
+      .btn-2 {
+        a{
+          width: 300px;
+          padding: 0 25px;
+        }
+      }
+    }
+  }
 }
-    @media (max-width: 480px) {
+@media (max-width: 480px) {
 
       .btn-1 {
         height: 56px !important;
-        padding: 0 17px !important;
+
 
         a {
           font-size: 14px;
           line-height: 26px;
         }
       }
+  %btn-1{
+    &:before{
+      transition: all 0.1s;
+      animation-name: slideme;
+      animation-duration: 3s;
+      animation-delay: 0.05s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    &:hover{
+      &:before {
+        transform: skewX(-45deg) translateX(0);
+        transition: none;
+      }
+    }
+    @keyframes slideme {
+      0% {
+        left: -30px;
+        margin-left: 0;
+      }
+      30% {
+        left: 110%;
+        margin-left: 80px;
+      }
+      100% {
+        left: 110%;
+        margin-left: 80px;
+      }
+    }
+  }
+  %btn-2{
+    &:before{
+      transition: all 0.1s;
+      animation-name: slideme;
+      animation-duration: 3s;
+      animation-delay: 0.03s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    &:hover{
+      &:before {
+        transform: skewX(-45deg) translateX(0);
+        transition: none;
+      }
+    }
+    @keyframes slideme {
+      0% {
+        left: -30px;
+        margin-left: 0;
+      }
+      30% {
+        left: 110%;
+        margin-left: 80px;
+      }
+      100% {
+        left: 110%;
+        margin-left: 80px;
+      }
+    }
+  }
+
       .owl-theme .owl-dots .owl-dot span {
         width: 9px !important;
         height: 9px !important;
@@ -886,7 +1000,6 @@
 
         .btn-1 {
           margin-top: 60px;
-          flex-wrap: wrap;
           align-items: center;
           justify-content: center;
 
@@ -975,6 +1088,10 @@
             p {
               font-size: 12px;
               line-height: 16px;
+                margin-top: 7px;
+                &.last {
+                  margin-top: 7px;
+                }
             }
 
             .num {
@@ -1281,7 +1398,7 @@
           .btn-2 {
             a {
               height: 60px;
-              padding: 0 14px;
+              padding: 0 11px;
               font-size: 14px!important;
               line-height: 20px;
               width: 220px;
@@ -1413,4 +1530,19 @@
         }
       }
     }
+@media (max-width: 340px) {
+  #about {
+    .statistics{
+      .static-wrap{
+        .num {
+          p{
+            font-size: 23px;
+            line-height: 25px;
+          }
+        }
+
+      }
+    }
+  }
+}
 

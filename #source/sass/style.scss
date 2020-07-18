@@ -21,125 +21,105 @@ main{
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  &.burger-menu_active .burger-menu_button {
-    right: -15px;
-    top: -5px;
-  }
-  &.burger-menu_active .burger-menu-lines{
-    background-color: #000000!important;
-    &:before{
-      transform: rotate(45deg);
-      top: 10px!important;
-    }
-    &:after{
-      transform: rotate(-45deg);
-      top: 0;
-    }
-  }
 
+  &.burger-menu_active .burger-menu_button.first {
+   z-index: 1;
+
+  }
   .burger-menu_button {
     position: relative;
     z-index: 1001;
     border: none;
-    background: none;
-    transition: 0.4s;
-    top: 25px;
-    right: -12px;
+    width: 30px;
+    height: 23px;
+    top: 14px;
+    right: 0;
+    background: url("../images/menu burger (1).png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
 
-    .burger-menu-lines,
-    {
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      background-color: #ffffff;
-      border-radius: 1px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
 
-      &:after {
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background-color: #ffffff;
-        border-radius: 1px;
-        content: "";
-        top: 10px;
-        right: 0;
-      }
-      &:before {
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        background-color: #ffffff;
-        border-radius: 1px;
-        content: "";
-        top: -10px;
-        right: 0;
-      }
-    }
   }
-}
+
   .burger-menu_nav {
     position: fixed;
     z-index: 990;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 23%;
     height: 100vh;
-    right: 0;
     top: -200%;
-    transition: 0.4s;
+    right: 0;
+    transition: .4s;
     background: #000000;
     border-radius: 0 4px 4px 0;
-    padding: 40px;
+    padding: 40px 40px 40px 40px;
+    .burger-menu_button{
+      background: url("../images/Group.png") no-repeat center;
+      background-size: contain;
+      width: 20px;
+      height: 20px;
+      &.two{
+        position: absolute;
+        right: 30px;
+        top: 20px;
+      }
+    }
 
     .burger-menu_link {
       display: inline-block;
-      width: 40%;
       font-weight: 600;
       font-size: 18px;
       line-height: 22px;
       color: #FFFFFF;
       margin-bottom: 10px;
-      &.second{
+
+      &.second {
         font-weight: 300;
       }
-      &.first{
+
+      &.first {
         margin-bottom: 15px;
       }
-      &:hover{
+
+      &:hover {
         transform: translateY(2px);
-      };
+      }
+    ;
     }
-  .burger-menu_overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 10;
-  }
-    .btn-1{
+
+    .burger-menu_overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 10;
+    }
+
+    .btn-1 {
       margin-bottom: 20px;
       justify-content: left;
       align-items: center;
-      &.first{
+
+      &.first {
         margin-top: 25px;
       }
-      a{
+
+      a {
         @extend %btn-1;
-        padding: 5px 0!important;
+        padding: 5px 0 !important;
         width: 238px;
-        height: 48px!important;
-        background: none!important;
-        border: 1px solid #ffffff!important;
-        color: #ffffff!important;
-        font-size: 14px!important;
-        line-height: 18px!important;
+        height: 48px !important;
+        background: none !important;
+        border: 1px solid #ffffff !important;
+        color: #ffffff !important;
+        font-size: 14px !important;
+        line-height: 18px !important;
       }
     }
+  }
 }
 %header-btn {
   width: 205px;
@@ -197,8 +177,8 @@ main{
     background-color: #000000;
     color: #fff;
     &:before {
-      transform: skewX(-45deg) translateX(26.5em);
-      transition: all 0.5s ease-in-out;
+      transform: skewX(-45deg) translateX(36.5em);
+      transition: all 0.6s ease-in-out;
     }
   }
 }
@@ -244,7 +224,7 @@ $color1: #ffffff;
     color: #fff;
     &:before {
 
-      transform: skewX(-45deg) translateX(23.5em);
+      transform: skewX(-45deg) translateX(33.5em);
       transition: all 0.5s ease-in-out;
     }
   }
@@ -263,6 +243,30 @@ $color1: #ffffff;
   color: #C1915C;
   padding: 0 50px;
   height: 78px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  &:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -5.4em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+  }
+  &:hover {
+    background-color: #000000;
+    color: #C1915C;
+    &:before {
+      transform: skewX(-45deg) translateX(36.5em);
+      transition: all 0.6s ease-in-out;
+    }
+  }
 }
 .section-title {
   font-weight: 600;
@@ -322,7 +326,7 @@ header {
     align-items: center;
 
     .logo {
-      margin-right: 163px;
+      margin-right: 158px;
       img {
         width: 192px;
         height: auto;
@@ -510,8 +514,13 @@ header {
       }
       .burger-menu{
         .burger-menu_button{
-          top: 15px;
-          right: 15px;
+          top: 7px;
+          right: 0;
+          &.two{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+          } 
         }
       }
 
@@ -682,6 +691,7 @@ header {
     display: flex;
     flex-direction: column;
     a {
+      text-transform: uppercase;
       display: inline-block;
       margin: 16px auto 0 auto;
       font-weight: 400;
@@ -1255,6 +1265,7 @@ header {
       font-size: 16px;
       line-height: 30px;
       color: #000000;
+      text-transform: uppercase;
     }
     .description{
       font-weight: normal;
@@ -1346,7 +1357,7 @@ footer {
     }
 
     .btn-2 {
-      margin-top: 87px;
+      margin-top: 94px;
       display: flex;
       justify-content: left;
 
@@ -1373,9 +1384,12 @@ footer {
         color: #ffffff;
         height: 68px;
         padding: 0 30px;
+        border-radius: 4px;
 
         img {
           margin-right: 20px;
+          width: 30px;
+          height: 30px;
         }
       }
     }
@@ -1386,6 +1400,7 @@ footer {
       .social-box {
         a {
           margin-left: 21px;
+
         }
       }
     }
@@ -1442,6 +1457,7 @@ footer {
       justify-content: center;
 
       a {
+        text-transform: uppercase;
         font-size: 12px;
         line-height: 12px;
         display: flex;
