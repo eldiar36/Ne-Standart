@@ -1064,6 +1064,7 @@ header .header-fixed-box .right-box-fixed .burger-menu .burger-menu_button.two {
   line-height: 55px;
   color: #FFFFFF;
   margin-bottom: 30px;
+  position:relative;
 }
 
 #home .content .box p {
