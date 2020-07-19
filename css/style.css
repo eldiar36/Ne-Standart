@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 
 @font-face {
   font-family: 'Proxima Nova';
@@ -83,7 +83,7 @@ main {
   height: 23px;
   top: 14px;
   right: 0;
-  background: url("../images/menu burger (1).png") no-repeat center;
+  background: url("../images/menu burger-pc.png") no-repeat center;
   background-size: contain;
   cursor: pointer;
 }
@@ -1059,12 +1059,12 @@ header .header-fixed-box .right-box-fixed .burger-menu .burger-menu_button.two {
 }
 
 #home .content .box h1 {
+  position: relative;
   font-weight: bold;
   font-size: 50px;
   line-height: 55px;
   color: #FFFFFF;
   margin-bottom: 30px;
-position:relative;
 }
 
 #home .content .box p {
@@ -1212,6 +1212,7 @@ footer .contacts .btn-3 #exclusive a a img {
 
 #professional-design .section-title {
   margin-bottom: 34px;
+  width: 69%;
 }
 
 #professional-design .box {
@@ -1253,6 +1254,7 @@ footer .contacts .btn-3 #exclusive a a img {
 
 #design-project .section-title {
   margin-bottom: 20px;
+  width: 60%;
 }
 
 #design-project .section-subtitle {
@@ -1988,7 +1990,7 @@ footer .contacts .description.first {
 
 footer .contacts .btn-1,
 footer .contacts .btn-3 a {
-  margin-top: 93px;
+  margin-top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1998,7 +2000,7 @@ footer .contacts .btn-3 a {
 }
 
 footer .contacts .btn-2 {
-  margin-top: 94px;
+  margin-top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2023,6 +2025,10 @@ footer .contacts .btn-box {
 footer .contacts .btn-3 {
   margin-top: 0;
   margin-bottom: 56px;
+}
+
+footer .contacts .btn-3:last-child {
+  margin-bottom: 0;
 }
 
 footer .contacts .btn-3 a {
@@ -2592,7 +2598,7 @@ footer .contacts .btn-3 #send form a {
   }
 
   header .header-top .logo {
-    margin: -5px auto 0 auto;
+    margin: -2px auto 0 auto;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -2600,7 +2606,7 @@ footer .contacts .btn-3 #send form a {
 
   header .header-top .logo img {
     width: 123px;
-    height: 17px;
+    height: 18px;
   }
 
   header .header-top .logo span {
@@ -2623,6 +2629,8 @@ footer .contacts .btn-3 #send form a {
 
   header .header-top .tel_mobile {
     display: block;
+    position: relative;
+    top: -2px;
   }
 
   header .header-top .right-box {
@@ -2636,6 +2644,13 @@ footer .contacts .btn-3 #send form a {
   header .header-top .burger-menu .burger-menu_button {
     top: 0;
     left: 0;
+  }
+
+  header .header-top .burger-menu .burger-menu_button.first {
+    background: url("../images/burger-mobile.png") no-repeat center;
+    background-size: contain;
+    width: 22px;
+    height: 17px;
   }
 
   header .header-top .burger-menu .burger-menu_nav {
@@ -2656,6 +2671,8 @@ footer .contacts .btn-3 #send form a {
   }
 
   header .header-top .burger-menu .burger-menu_nav .burger-menu_button.two {
+    background: url("../images/Group.png") no-repeat center;
+    background-size: contain;
     left: 40px;
     top: 20px;
   }
@@ -2737,37 +2754,37 @@ footer .contacts .btn-3 #send form a {
 
   #home .home-slider .items {
     padding: 67px 30px 40px 30px;
-    background: url("/images/img-1.png") no-repeat bottom;
+    background: url("../images/img-1.png") no-repeat bottom;
     background-size: cover;
   }
 
   #home .home-slider .items.second {
-    background: url("/images/img-2.png") no-repeat bottom;
+    background: url("../images/img-2.png") no-repeat bottom;
     background-size: cover;
   }
 
   #home .home-slider .items.third {
-    background: url("/images/img-3.png") no-repeat bottom;
+    background: url("../images/img-3.png") no-repeat bottom;
     background-size: cover;
   }
 
   #home .home-slider .items.four {
-    background: url("/images/img-4.png") no-repeat bottom;
+    background: url("../images/img-4.png") no-repeat bottom;
     background-size: cover;
   }
 
   #home .home-slider .items.five {
-    background: url("/images/img-5.png") no-repeat bottom;
+    background: url("../images/img-5.png") no-repeat bottom;
     background-size: cover;
   }
 
   #home .home-slider .items.six {
-    background: url("/images/img-6.png") no-repeat bottom;
+    background: url("../images/img-6.png") no-repeat bottom;
     background-size: cover;
   }
 
   #home .home-slider .items.seven {
-    background: url("/images/img-7.png") no-repeat bottom;
+    background: url("../images/img-7.png") no-repeat bottom;
     background-size: cover;
   }
 
@@ -2806,14 +2823,6 @@ footer .contacts .btn-3 #send form a {
     display: block;
   }
 
-  .section-title.pc {
-    display: none;
-  }
-
-  #professional-design .section-title.mobile {
-    width: 90%;
-  }
-
   #professional-design .box {
     padding: 37px 35px;
     margin-bottom: 40px;
@@ -2829,6 +2838,10 @@ footer .contacts .btn-3 #send form a {
 
   #design-project {
     padding: 50px 0 60px 0;
+  }
+
+  #design-project .section-title {
+    width: 90%;
   }
 
   #design-project .section-subtitle {
@@ -3082,7 +3095,7 @@ footer .contacts .btn-3 #send form a {
   }
 
   #design-project {
-    background: url("/images/Group 1395 1.png") no-repeat bottom center;
+    background: url("../images/Group 1395 1.png") no-repeat bottom center;
     background-size: cover;
   }
 
@@ -3412,8 +3425,13 @@ footer .contacts .btn-3 #send form a {
 
   #professional-design {
     padding: 35px 0 50px 0;
-    background: url("/images/design-bg_mobile.png") no-repeat center;
+    background: url("../images/design-bg_mobile.png") no-repeat center;
     background-size: cover;
+  }
+
+  #professional-design .section-title {
+    line-height: 30px;
+    width: 95%;
   }
 
   #professional-design .box {
@@ -3448,7 +3466,7 @@ footer .contacts .btn-3 #send form a {
 
   #design-project {
     padding: 24px 0 40px 0;
-    background: url("/images/Group 1395 1.png") no-repeat top;
+    background: url("../images/Group 1395 1.png") no-repeat top;
     background-size: cover;
   }
 
@@ -3499,7 +3517,7 @@ footer .contacts .btn-3 #send form a {
   }
 
   #materials {
-    background: url("/images/material-mobile-background.png") no-repeat center;
+    background: url("../images/material-mobile-background.png") no-repeat center;
     background-size: cover;
     padding: 15px 0 115px 0;
   }
@@ -3559,7 +3577,7 @@ footer .contacts .btn-3 #send form a {
 
   #social {
     padding: 42px 0 119px 0;
-    background: url("/images/social-mobile-bg.png") no-repeat top;
+    background: url("../images/social-mobile-bg.png") no-repeat top;
     background-size: cover;
   }
 
@@ -3595,7 +3613,7 @@ footer .contacts .btn-3 #send form a {
   }
 
   #about {
-    background: url("/images/company-mobile-background.png") no-repeat;
+    background: url("../images/company-mobile-background.png") no-repeat;
     background-size: cover;
   }
 
@@ -3735,7 +3753,7 @@ footer .contacts .btn-3 #send form a {
   }
 
   #pdf {
-    background: url("/images/pdf-mobile-background.png") no-repeat center;
+    background: url("../images/pdf-mobile-background.png") no-repeat center;
     background-size: cover;
     display: block;
   }
