@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 @font-face {
   font-family: 'Proxima Nova';
@@ -1786,7 +1786,7 @@ footer .contacts .btn-3 #scheme a a.second {
 
 #scheme .pdf h2 {
   margin-bottom: 18px;
-  color: #ffffff;
+  color: #fff;
 }
 
 #scheme .pdf .description {
