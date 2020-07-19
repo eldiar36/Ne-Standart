@@ -100,7 +100,7 @@ main {
           flex-direction: column;
   width: 23%;
   height: 100vh;
-  top: -200%;
+  top: -1000%;
   right: 0;
   -webkit-transition: .4s;
   -o-transition: .4s;
