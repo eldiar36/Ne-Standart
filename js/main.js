@@ -50,7 +50,6 @@ function burgerMenu(selector) {
     }
 }
 burgerMenu('.burger-menu');
-
 const accordions = document.querySelectorAll(".accordion-wrapper");
 for (const accordion of accordions) {
     const panels = accordion.querySelectorAll(".accordion");
@@ -103,3 +102,18 @@ jQuery(document).ready(function($) {
 
     });
 });
+$('.burger-menu_link').on('click', function() {
+    $(this).addClass('active')
+        .siblings().removeClass('active');
+});
+$('.nav li').on('click', function() {
+    $(this).addClass('active')
+        .siblings().removeClass('active');
+});
+$('.nav-menu li').on('click', function() {
+    $(this).addClass('active')
+        .siblings().removeClass('active');
+});
+
+
+
