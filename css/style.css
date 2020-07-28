@@ -98,7 +98,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 23%;
+  width: 19%;
   height: 100vh;
   top: 0;
   right: -1000%;
@@ -304,7 +304,9 @@ footer .contacts .btn-3 #scheme a a,
 footer .contacts .btn-3 #questions .any-box a a,
 footer .contacts .btn-1 a,
 footer .contacts .btn-3 a a,
-.white-popup-block .btn-1 a {
+.white-popup-block .btn-1 button,
+.white-popup-block footer .contacts .btn-3 a button,
+footer .contacts .btn-3 .white-popup-block a button {
   background: -webkit-gradient(linear, left top, right top, from(#C09667), to(#C1915C));
   background: -o-linear-gradient(left, #C09667 0%, #C1915C 100%);
   background: linear-gradient(90deg, #C09667 0%, #C1915C 100%);
@@ -372,7 +374,9 @@ footer .contacts .btn-3 #scheme a a:before,
 footer .contacts .btn-3 #questions .any-box a a:before,
 footer .contacts .btn-1 a:before,
 footer .contacts .btn-3 a a:before,
-.white-popup-block .btn-1 a:before {
+.white-popup-block .btn-1 button:before,
+.white-popup-block footer .contacts .btn-3 a button:before,
+footer .contacts .btn-3 .white-popup-block a button:before {
   content: "";
   background-color: rgba(255, 255, 255, 0.5);
   height: 100%;
@@ -425,7 +429,9 @@ footer .contacts .btn-3 #scheme a a:hover,
 footer .contacts .btn-3 #questions .any-box a a:hover,
 footer .contacts .btn-1 a:hover,
 footer .contacts .btn-3 a a:hover,
-.white-popup-block .btn-1 a:hover {
+.white-popup-block .btn-1 button:hover,
+.white-popup-block footer .contacts .btn-3 a button:hover,
+footer .contacts .btn-3 .white-popup-block a button:hover {
   background-color: #000000;
   color: #fff;
 }
@@ -466,7 +472,9 @@ footer .contacts .btn-3 #scheme a a:hover:before,
 footer .contacts .btn-3 #questions .any-box a a:hover:before,
 footer .contacts .btn-1 a:hover:before,
 footer .contacts .btn-3 a a:hover:before,
-.white-popup-block .btn-1 a:hover:before {
+.white-popup-block .btn-1 button:hover:before,
+.white-popup-block footer .contacts .btn-3 a button:hover:before,
+footer .contacts .btn-3 .white-popup-block a button:hover:before {
   -webkit-transform: skewX(-45deg) translateX(36.5em);
       -ms-transform: skewX(-45deg) translateX(36.5em);
           transform: skewX(-45deg) translateX(36.5em);
@@ -1338,7 +1346,7 @@ footer .contacts .btn-3 #exclusive a a img {
 }
 
 #design-project .section-subtitle {
-  margin-bottom: 732px;
+  margin-bottom: 484px;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -1811,11 +1819,13 @@ footer .contacts .btn-3 #cooperation-mobile a a {
 }
 
 #scheme .box {
+  margin: 0 auto;
+  width: 470px;
   background: #FFFFFF;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
-  padding: 40px;
+  padding: 30px;
 }
 
 #scheme .box .box-title {
@@ -2399,13 +2409,15 @@ footer .footer .politic a:hover {
   opacity: 0.6;
 }
 
-.white-popup-block .btn-1 a,
-.white-popup-block footer .contacts .btn-3 a a,
-footer .contacts .btn-3 .white-popup-block a a {
+.white-popup-block .btn-1 button,
+.white-popup-block footer .contacts .btn-3 a button,
+footer .contacts .btn-3 .white-popup-block a button {
   padding: 0;
   font-size: 14px !important;
   width: 250px;
   height: 48px !important;
+  border: none;
+  cursor: pointer;
 }
 
 .mfp-close-btn-in .mfp-close {
@@ -2483,7 +2495,7 @@ footer .contacts .btn-3 #send form a {
 
 @media (max-width: 1600px) {
   .burger-menu .burger-menu_nav {
-    width: 26%;
+    width: 23%;
   }
 }
 
@@ -2550,9 +2562,9 @@ footer .contacts .btn-3 #send form a {
     width: 220px !important;
   }
 
-  .white-popup-block .btn-1 a,
-  .white-popup-block footer .contacts .btn-3 a a,
-  footer .contacts .btn-3 .white-popup-block a a {
+  .white-popup-block .btn-1 button,
+  .white-popup-block footer .contacts .btn-3 a button,
+  footer .contacts .btn-3 .white-popup-block a button {
     width: 220px !important;
     font-size: 14px !important;
     padding: 0 17px;
@@ -2621,6 +2633,10 @@ footer .contacts .btn-3 #send form a {
 
   header .header-top .center-box .contacts-box-right a {
     font-size: 14px;
+  }
+
+  header .burger-menu .burger-menu_nav {
+    width: 30%;
   }
 
   header .burger-menu .burger-menu_nav .burger-menu_link:after {
@@ -2907,7 +2923,9 @@ footer .contacts .btn-3 #send form a {
   footer .contacts .btn-3 #questions .any-box a a,
   footer .contacts .btn-1 a,
   footer .contacts .btn-3 a a,
-  .white-popup-block .btn-1 a {
+  .white-popup-block .btn-1 button,
+  .white-popup-block footer .contacts .btn-3 a button,
+  footer .contacts .btn-3 .white-popup-block a button {
     padding: 0 40px;
   }
 
@@ -3347,7 +3365,9 @@ footer .contacts .btn-3 #send form a {
   footer .contacts .btn-3 #questions .any-box a a:before,
   footer .contacts .btn-1 a:before,
   footer .contacts .btn-3 a a:before,
-  .white-popup-block .btn-1 a:before {
+  .white-popup-block .btn-1 button:before,
+  .white-popup-block footer .contacts .btn-3 a button:before,
+  footer .contacts .btn-3 .white-popup-block a button:before {
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     transition: all 0.1s;
@@ -3399,7 +3419,9 @@ footer .contacts .btn-3 #send form a {
   footer .contacts .btn-3 #questions .any-box a a:hover:before,
   footer .contacts .btn-1 a:hover:before,
   footer .contacts .btn-3 a a:hover:before,
-  .white-popup-block .btn-1 a:hover:before {
+  .white-popup-block .btn-1 button:hover:before,
+  .white-popup-block footer .contacts .btn-3 a button:hover:before,
+  footer .contacts .btn-3 .white-popup-block a button:hover:before {
     -webkit-transform: skewX(-45deg) translateX(0);
         -ms-transform: skewX(-45deg) translateX(0);
             transform: skewX(-45deg) translateX(0);
@@ -3839,6 +3861,7 @@ footer .contacts .btn-3 #send form a {
 
   #scheme .box {
     padding: 30px 30px 15px 30px;
+    width: 100%;
   }
 
   #scheme .box.two {
@@ -4178,9 +4201,9 @@ footer .contacts .btn-3 #send form a {
     color: rgba(255, 255, 255, 0.6);
   }
 
-  .white-popup-block .btn-1 a,
-  .white-popup-block footer .contacts .btn-3 a a,
-  footer .contacts .btn-3 .white-popup-block a a {
+  .white-popup-block .btn-1 button,
+  .white-popup-block footer .contacts .btn-3 a button,
+  footer .contacts .btn-3 .white-popup-block a button {
     width: 220px !important;
     font-size: 14px !important;
     line-height: 20px !important;
