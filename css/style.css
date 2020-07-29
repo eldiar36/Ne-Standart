@@ -4041,18 +4041,18 @@ footer .contacts .btn-3 #send form a {
     margin-bottom: 30px;
   }
 
-  #questions .accordion {
+  #questions .row-question .accordion {
     margin-bottom: 20px;
   }
 
-  #questions .accordion .accordion-header {
+  #questions .row-question .accordion .accordion-header {
     padding: 10px 30px;
     -webkit-box-align: normal;
         -ms-flex-align: normal;
             align-items: normal;
   }
 
-  #questions .accordion .accordion-header .ques {
+  #questions .row-question .accordion .accordion-header .ques {
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
@@ -4060,56 +4060,56 @@ footer .contacts .btn-3 #send form a {
     margin-bottom: 0;
   }
 
-  #questions .accordion .accordion-header img {
+  #questions .row-question .accordion .accordion-header img {
     width: 25px;
     height: 25px;
   }
 
-  #questions .accordion .panel {
+  #questions .row-question .accordion .panel {
     padding-top: 5px;
   }
 
-  #questions .accordion .panel p {
+  #questions .row-question .accordion .panel p {
     font-size: 12px;
     line-height: 16px;
   }
 
-  #questions .any-box {
+  #questions .row-question .any-box {
     width: 100%;
   }
 
-  #questions .any-box .box-title {
+  #questions .row-question .any-box .box-title {
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 13px;
   }
 
-  #questions .any-box .subtitle {
+  #questions .row-question .any-box .subtitle {
     font-size: 14px;
     line-height: 20px;
   }
 
-  #questions .any-box img {
+  #questions .row-question .any-box img {
     margin: 14px 0 10px 0;
     width: 120px;
     height: 120px;
   }
 
-  #questions .any-box .name {
+  #questions .row-question .any-box .name {
     font-size: 12px;
     line-height: 20px;
   }
 
-  #questions .any-box .description {
+  #questions .row-question .any-box .description {
     width: 90%;
     font-size: 12px;
     line-height: 16px;
     margin: 0 auto;
   }
 
-  #questions .any-box .btn-1 a,
-  #questions .any-box footer .contacts .btn-3 a a,
-  footer .contacts .btn-3 #questions .any-box a a {
+  #questions .row-question .any-box .btn-1 a,
+  #questions .row-question .any-box footer .contacts .btn-3 a a,
+  footer .contacts .btn-3 #questions .row-question .any-box a a {
     padding: 0 17px;
     width: 220px;
     height: 56px;
