@@ -72,8 +72,10 @@ $(document).ready(function(){
         nav:false,
         navText:true,
         margin:0,
-        animateIn: true,
         autoWidth: false,
+        autoplay:true,
+        autoplayTimeout:6000,
+        autoplaySpeed:1000,
         autoHeight: true,
         responsive: {
             0:{
@@ -98,10 +100,31 @@ AOS.init({
 jQuery(document).ready(function($) {
     $('.popup-with-form').magnificPopup({
         type: 'inline',
-        fixedContentPos: true
-
+        fixedContentPos: true,
+    });
+    $("#popup-form").submit(function (e) {
+        e.preventDefault();
+        jQuery.ajax({
+            url: "mail.php",
+            type: "POST",
+            response: "HTML",
+            data: jQuery(this).serialize(),
+            success: function(data) {
+                jQuery.magnificPopup.open({
+                    items: {
+                        src: '#popup-form-ok'
+                    },
+                    type: 'inline'
+                });
+                jQuery('.popup-with-form').magnificPopup.close();
+            },
+            error: function() {
+                console.log("Не возможно отправить");
+            }
+        });
     });
 });
+
 $('.burger-menu_link').on('click', function() {
     $(this).addClass('active')
         .siblings().removeClass('active');
