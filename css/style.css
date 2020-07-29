@@ -295,9 +295,9 @@ footer .contacts .btn-3 #cooperation-mobile a a,
 #scheme .btn-1 a,
 #scheme footer .contacts .btn-3 a a,
 footer .contacts .btn-3 #scheme a a,
-#questions .any-box .btn-1 a,
-#questions .any-box footer .contacts .btn-3 a a,
-footer .contacts .btn-3 #questions .any-box a a,
+#questions .row-question .any-box .btn-1 a,
+#questions .row-question .any-box footer .contacts .btn-3 a a,
+footer .contacts .btn-3 #questions .row-question .any-box a a,
 footer .contacts .btn-1 a,
 footer .contacts .btn-3 a a,
 .white-popup-block .btn-1 button,
@@ -365,9 +365,9 @@ footer .contacts .btn-3 #cooperation-mobile a a:before,
 #scheme .btn-1 a:before,
 #scheme footer .contacts .btn-3 a a:before,
 footer .contacts .btn-3 #scheme a a:before,
-#questions .any-box .btn-1 a:before,
-#questions .any-box footer .contacts .btn-3 a a:before,
-footer .contacts .btn-3 #questions .any-box a a:before,
+#questions .row-question .any-box .btn-1 a:before,
+#questions .row-question .any-box footer .contacts .btn-3 a a:before,
+footer .contacts .btn-3 #questions .row-question .any-box a a:before,
 footer .contacts .btn-1 a:before,
 footer .contacts .btn-3 a a:before,
 .white-popup-block .btn-1 button:before,
@@ -420,9 +420,9 @@ footer .contacts .btn-3 #cooperation-mobile a a:hover,
 #scheme .btn-1 a:hover,
 #scheme footer .contacts .btn-3 a a:hover,
 footer .contacts .btn-3 #scheme a a:hover,
-#questions .any-box .btn-1 a:hover,
-#questions .any-box footer .contacts .btn-3 a a:hover,
-footer .contacts .btn-3 #questions .any-box a a:hover,
+#questions .row-question .any-box .btn-1 a:hover,
+#questions .row-question .any-box footer .contacts .btn-3 a a:hover,
+footer .contacts .btn-3 #questions .row-question .any-box a a:hover,
 footer .contacts .btn-1 a:hover,
 footer .contacts .btn-3 a a:hover,
 .white-popup-block .btn-1 button:hover,
@@ -463,9 +463,9 @@ footer .contacts .btn-3 #cooperation-mobile a a:hover:before,
 #scheme .btn-1 a:hover:before,
 #scheme footer .contacts .btn-3 a a:hover:before,
 footer .contacts .btn-3 #scheme a a:hover:before,
-#questions .any-box .btn-1 a:hover:before,
-#questions .any-box footer .contacts .btn-3 a a:hover:before,
-footer .contacts .btn-3 #questions .any-box a a:hover:before,
+#questions .row-question .any-box .btn-1 a:hover:before,
+#questions .row-question .any-box footer .contacts .btn-3 a a:hover:before,
+footer .contacts .btn-3 #questions .row-question .any-box a a:hover:before,
 footer .contacts .btn-1 a:hover:before,
 footer .contacts .btn-3 a a:hover:before,
 .white-popup-block .btn-1 button:hover:before,
@@ -1947,12 +1947,18 @@ footer .contacts .btn-3 #scheme a a.second {
   margin-bottom: 61px;
 }
 
-#questions .accordion {
+#questions .row-question {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#questions .row-question .accordion {
   border-radius: 4px;
   margin-bottom: 30px;
 }
 
-#questions .accordion .accordion-header {
+#questions .row-question .accordion .accordion-header {
   background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1967,30 +1973,30 @@ footer .contacts .btn-3 #scheme a a.second {
   border-radius: 4px;
 }
 
-#questions .accordion .accordion-header .ques {
+#questions .row-question .accordion .accordion-header .ques {
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
 
-#questions .accordion .accordion-header img {
+#questions .row-question .accordion .accordion-header img {
   width: 40px;
   height: 40px;
 }
 
-#questions .accordion .panel {
+#questions .row-question .accordion .panel {
   background: #ffffff;
   padding: 0 30px 11px 30px;
 }
 
-#questions .accordion .panel p {
+#questions .row-question .accordion .panel p {
   font-size: 16px;
   line-height: 23px;
   color: #000000;
 }
 
-#questions .any-box {
+#questions .row-question .any-box {
   padding: 30px 10px 30px 10px;
   background: #ffffff;
   border-radius: 4px;
@@ -1998,7 +2004,7 @@ footer .contacts .btn-3 #scheme a a.second {
   width: 370px;
 }
 
-#questions .any-box .box-title {
+#questions .row-question .any-box .box-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 40px;
@@ -2006,19 +2012,19 @@ footer .contacts .btn-3 #scheme a a.second {
   margin-bottom: 0;
 }
 
-#questions .any-box .subtitle {
+#questions .row-question .any-box .subtitle {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
 
-#questions .any-box img {
+#questions .row-question .any-box img {
   margin: 25px 0 16px 0;
   width: 155px;
   height: 155px;
 }
 
-#questions .any-box .name {
+#questions .row-question .any-box .name {
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
@@ -2027,7 +2033,7 @@ footer .contacts .btn-3 #scheme a a.second {
   margin-bottom: 8px;
 }
 
-#questions .any-box .description {
+#questions .row-question .any-box .description {
   font-weight: normal;
   font-size: 13px;
   line-height: 16px;
@@ -2035,15 +2041,15 @@ footer .contacts .btn-3 #scheme a a.second {
   padding: 0 30px;
 }
 
-#questions .any-box .btn-1,
-#questions .any-box footer .contacts .btn-3 a,
-footer .contacts .btn-3 #questions .any-box a {
+#questions .row-question .any-box .btn-1,
+#questions .row-question .any-box footer .contacts .btn-3 a,
+footer .contacts .btn-3 #questions .row-question .any-box a {
   margin-top: 26px;
 }
 
-#questions .any-box .btn-1 a,
-#questions .any-box footer .contacts .btn-3 a a,
-footer .contacts .btn-3 #questions .any-box a a {
+#questions .row-question .any-box .btn-1 a,
+#questions .row-question .any-box footer .contacts .btn-3 a a,
+footer .contacts .btn-3 #questions .row-question .any-box a a {
   width: 205px;
   height: 48px;
 }
@@ -2865,6 +2871,12 @@ footer .contacts .btn-3 #send form a {
 }
 
 @media (max-width: 991px) {
+  #questions .row-question {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .container {
     max-width: 720px;
   }
@@ -2909,9 +2921,9 @@ footer .contacts .btn-3 #send form a {
   #scheme .btn-1 a,
   #scheme footer .contacts .btn-3 a a,
   footer .contacts .btn-3 #scheme a a,
-  #questions .any-box .btn-1 a,
-  #questions .any-box footer .contacts .btn-3 a a,
-  footer .contacts .btn-3 #questions .any-box a a,
+  #questions .row-question .any-box .btn-1 a,
+  #questions .row-question .any-box footer .contacts .btn-3 a a,
+  footer .contacts .btn-3 #questions .row-question .any-box a a,
   footer .contacts .btn-1 a,
   footer .contacts .btn-3 a a,
   .white-popup-block .btn-1 button,
@@ -3381,9 +3393,9 @@ footer .contacts .btn-3 #send form a {
   #scheme .btn-1 a:before,
   #scheme footer .contacts .btn-3 a a:before,
   footer .contacts .btn-3 #scheme a a:before,
-  #questions .any-box .btn-1 a:before,
-  #questions .any-box footer .contacts .btn-3 a a:before,
-  footer .contacts .btn-3 #questions .any-box a a:before,
+  #questions .row-question .any-box .btn-1 a:before,
+  #questions .row-question .any-box footer .contacts .btn-3 a a:before,
+  footer .contacts .btn-3 #questions .row-question .any-box a a:before,
   footer .contacts .btn-1 a:before,
   footer .contacts .btn-3 a a:before,
   .white-popup-block .btn-1 button:before,
@@ -3435,9 +3447,9 @@ footer .contacts .btn-3 #send form a {
   #scheme .btn-1 a:hover:before,
   #scheme footer .contacts .btn-3 a a:hover:before,
   footer .contacts .btn-3 #scheme a a:hover:before,
-  #questions .any-box .btn-1 a:hover:before,
-  #questions .any-box footer .contacts .btn-3 a a:hover:before,
-  footer .contacts .btn-3 #questions .any-box a a:hover:before,
+  #questions .row-question .any-box .btn-1 a:hover:before,
+  #questions .row-question .any-box footer .contacts .btn-3 a a:hover:before,
+  footer .contacts .btn-3 #questions .row-question .any-box a a:hover:before,
   footer .contacts .btn-1 a:hover:before,
   footer .contacts .btn-3 a a:hover:before,
   .white-popup-block .btn-1 button:hover:before,
