@@ -2543,14 +2543,6 @@ footer .contacts .btn-3 #send form a {
     margin-right: auto !important;
   }
 
-  header .header-top .logo {
-    margin-right: auto !important;
-  }
-
-  header .header-top .center-box {
-    margin-right: auto !important;
-  }
-
   header .header-fixed-box .logo-fixed {
     margin-right: auto !important;
   }
@@ -2789,7 +2781,7 @@ footer .contacts .btn-3 #send form a {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 
   header .header-top .center-box .contacts-box-right,
