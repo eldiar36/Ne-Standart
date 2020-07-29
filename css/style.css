@@ -2535,12 +2535,12 @@ footer .contacts .btn-3 #send form a {
     height: 56px;
   }
 
-  header .logo {
-    margin-right: auto;
+  header .header-top .logo {
+    margin-right: auto !important;
   }
 
-  header .center-box {
-    margin-right: auto;
+  header .header-top .center-box {
+    margin-right: auto !important;
   }
 }
 
