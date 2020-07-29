@@ -1253,7 +1253,7 @@ footer .contacts .btn-3 #home-btn-mobile a a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 400;
+  font-weight: 600;
   background: #f0f0ef;
   font-size: 14px;
   line-height: 18px;
@@ -2528,6 +2528,14 @@ footer .contacts .btn-3 #send form a {
     width: 230px;
     height: 56px;
   }
+
+  header .logo {
+    margin-right: auto;
+  }
+
+  header .center-box {
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2599,7 +2607,7 @@ footer .contacts .btn-3 #send form a {
   }
 
   header .header-top .logo {
-    margin-right: 54px;
+    margin-right: auto;
   }
 
   header .header-top .logo img {
@@ -2611,7 +2619,7 @@ footer .contacts .btn-3 #send form a {
   }
 
   header .header-top .center-box {
-    margin-right: 35px;
+    margin-right: auto;
   }
 
   header .header-top .center-box .contacts-box-left {
@@ -3592,6 +3600,10 @@ footer .contacts .btn-3 #send form a {
 
   #exclusive .box a:last-child.tow-ver1 {
     height: 60px;
+  }
+
+  #exclusive .box a:last-child.tow-ver2 {
+    height: 50px;
   }
 
   #exclusive .btn-1,
