@@ -2542,6 +2542,23 @@ footer .contacts .btn-3 #send form a {
   header .header-top .center-box {
     margin-right: auto !important;
   }
+
+  header .header-top .logo {
+    margin-right: auto !important;
+  }
+
+  header .header-top .center-box {
+    margin-right: auto !important;
+  }
+
+  header .header-fixed-box .logo-fixed {
+    margin-right: auto !important;
+  }
+
+  header .header-fixed-box .right-box-fixed .links {
+    margin-left: auto;
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 1200px) {
